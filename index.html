@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE = edge">
+        <meta name="viewport" content="width-device-width, initial scale = 1.0">
+        <title>Checkmate! Inductions 2024</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="index.html">Resources</a>
+                <a href="index.html">Members</a>
+                <a href="index.html">Alumni</a>
+                <a href="index.html">Achievements</a>
+                <a href="index.html">Contact</a>
+                <button class="Inductions" onclick="transform()">Inductions 2023</button>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div id="popup">
+                <span class="icon-close" onclick="transformBack()">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <div class="form-box">
+                    <h2>Register for the 2024 club Inductions of Checkmate!</h2>
+                    <form id="registration-form" onsubmit="displayFormData()">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required placeholder="Elon Musk">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required placeholder="lorem@ipsum.net">
+                        </div>               
+                        <div>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" required7>
+                        </div>                   
+                        <div>
+                            <label for="about">Tell us about yourself:</label>
+                            <textarea id="about" required></textarea>
+                        </div>
+                        <div>
+                            <label for="achievements">Achievements? If yes, please describe them:</label>
+                            <textarea id="achievements" required></textarea>
+                        </div>
+                        <div>
+                            <label for="grade">Grade:</label>
+                            <select id="grade">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10" selected>10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Would you like to receive notifications?</label><br>
+                            <input type="checkbox" id="notificationsYes" name="notifications" value="yes" checked>
+                            <label for="notificationsYes" id="yesnotifs">Check if Yes!</label>
+                        </div>                      
+                        <div>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="copyright">
+                © 2024-25 Checkmate!
+            </div>
+            <div class="school">
+                DPS RK Puram, New Delhi, India
+            </div>
+            <div class="contact">
+                Linkedin | Discord | Instagram
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
