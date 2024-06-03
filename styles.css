@@ -8,9 +8,9 @@
 }
 
 body {
-    background: url(Chess_Club_Background_Img.png) no-repeat;
+    background: url(a.png) no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     overflow-x: hidden;
 }
 
@@ -50,7 +50,7 @@ header {
 
 .nav .Inductions:hover {
     background: #FFF;
-    color: #162938
+    color: #162938;
 }
 
 .wrapper {
@@ -71,6 +71,7 @@ header {
   top: 50px;
   transform: scale(0);
   transition: 0.5s;
+  color: #ffffff;
 }
 
 .wrapper .form-box {
